@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_theme.dart';
+import 'package:moviles_auth/theme/app_theme.dart';
 
 /// Read-only row with an icon, a label and its value.
 class ProfileField extends StatelessWidget {

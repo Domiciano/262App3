@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../components/error_message.dart';
-import '../../../../components/primary_button.dart';
-import '../../../../theme/app_theme.dart';
+import 'package:moviles_auth/components/error_message.dart';
+import 'package:moviles_auth/components/primary_button.dart';
+import 'package:moviles_auth/theme/app_theme.dart';
 
 /// Sign up form with username, full name, email and password.
 class RegisterScreen extends StatefulWidget {

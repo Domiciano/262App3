@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../components/primary_button.dart';
-import '../../../../components/profile_field.dart';
-import '../../../../theme/app_theme.dart';
+import 'package:moviles_auth/components/primary_button.dart';
+import 'package:moviles_auth/components/profile_field.dart';
+import 'package:moviles_auth/theme/app_theme.dart';
 
 /// Shows the profile of the signed in user and lets them sign out.
 class HomeScreen extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_theme.dart';
+import 'package:moviles_auth/theme/app_theme.dart';
 
 /// Full-width button that shows a progress indicator while loading.
 class PrimaryButton extends StatelessWidget {

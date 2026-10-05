@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'features/home/ui/screens/home_screen.dart';
-import 'features/login/ui/screens/login_screen.dart';
-import 'features/register/ui/screens/register_screen.dart';
-import 'theme/app_theme.dart';
+import 'package:moviles_auth/features/home/ui/screens/home_screen.dart';
+import 'package:moviles_auth/features/login/ui/screens/login_screen.dart';
+import 'package:moviles_auth/features/register/ui/screens/register_screen.dart';
+import 'package:moviles_auth/theme/app_theme.dart';
 
 void main() {
   runApp(const App());
