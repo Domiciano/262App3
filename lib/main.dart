@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:moviles_auth/features/home/ui/screens/home_screen.dart';
 import 'package:moviles_auth/features/login/ui/screens/login_screen.dart';
+import 'package:moviles_auth/features/register/ui/bloc/register_bloc.dart';
 import 'package:moviles_auth/features/register/ui/screens/register_screen.dart';
 import 'package:moviles_auth/theme/app_theme.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: 'https://pmijmrkaucdwadmnnvbo.supabase.co',
+    publishableKey: 'sb_publishable_8tS9o_mjkvKA4z9WUvRjCg_01oNcv6y',
+  );
+
   runApp(const App());
 }
 
@@ -22,7 +32,10 @@ class App extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (_) => const LoginScreen(),
-        '/register': (_) => const RegisterScreen(),
+        '/register': (_) => BlocProvider(
+          create: (context) => RegisterBloc(),
+          child: RegisterScreen(),
+        ),
         '/home': (_) => const HomeScreen(),
       },
     );
